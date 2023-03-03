@@ -1,0 +1,43 @@
+├── public
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+├── src
+│   ├── components
+│   │   ├── App.js
+│   │   ├── Home.js
+│   │   ├── Forecast.js
+│   │   ├── SearchBar.js
+│   │   ├── CityList.js     
+│   │   ├── CityItem.js    
+│   │   └── ...
+│   ├── hooks
+│   │   ├── useWeatherData.js
+│   │   ├── useGeolocation.js
+│   │   ├── useForecast.js
+│   │   ├── useCityList.js 
+│   │   └── ...
+│   ├── redux
+│   │   ├── store.js
+│   │   ├── actions
+│   │   │   ├── weather.js
+│   │   │   ├── cityList.js   
+│   │   │   └── ...
+│   │   ├── reducers
+│   │   │   ├── weather.js
+│   │   │   ├── cityList.js  
+│   │   │   └── ...
+│   │   └── ...
+│   ├── services
+│   │   ├── weatherAPI.js
+│   │   ├── database.js
+│   │   └── ...
+│   ├── utils
+│   │   ├── formatDate.js
+│   │   ├── ...
+│   │   └── ...
+│   ├── App.css
+│   ├── index.js
+│   └── ...
+├── package.json
+└── ...
