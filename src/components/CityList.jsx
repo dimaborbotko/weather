@@ -36,7 +36,7 @@ export default function CityList({ cityArr, manage }) {
       }
     };
     getWeather();
-  }, [cityArr, weatherData]);
+  }, [cityArr]);
 
   const handleDeleteCity = (city) => {
     const delCity = weatherData.filter((data) => data?.location?.name !== city);
