@@ -10,6 +10,7 @@ export default function SearchBar({manage}) {
     if (cityName !== "") setSkip(false);
     if(cityName.split("").length < 2) setSkip(true)
   }, [cityName]);
+  console.log(data)
   return (
     <>
       <input
