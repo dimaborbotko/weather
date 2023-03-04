@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useLazyGetWeatherDataQuery } from "../services/weatherAPI";
 import { getWeatherDataFor } from "../utils/getWeatherDataFor";
+import { Link } from "react-router-dom";
 
 export default function CityList({ cityArr, manage }) {
   const [weatherData, setWeatherData] = useState([]);
@@ -72,8 +73,10 @@ export default function CityList({ cityArr, manage }) {
       <button onClick={() => handleDeleteAll()}>delete all</button>
       {weatherData.map((item, index) => (
         <div key={index} style={{ backgroundColor: "#cbcbcb" }}>
-          <p>{item?.location?.name}</p>
-          <p>{item?.current?.temp_c}</p>
+          <Link to={`/city?city=${item?.location?.name}`}>
+            <p>{item?.location?.name}</p>
+            <p>{item?.current?.temp_c}</p>
+          </Link>
           <button onClick={() => handleDeleteCity(item?.location?.name)}>
             delete
           </button>
