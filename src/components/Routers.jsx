@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './Home';
-import CityItem from './CityItem';
+import CityItem from './CityItem/CityItem';
 import Redirect from './Redirect';
 import Login from "./Login";
 
